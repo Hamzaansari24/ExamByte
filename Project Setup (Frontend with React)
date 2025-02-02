@@ -1,0 +1,16 @@
+# Create a new React application named "exambyte-frontend"
+npx create-react-app exambyte-frontend  
+
+# Change directory to the newly created project folder
+cd exambyte-frontend  
+
+
+#------------------------------------------------#
+# Install Axios for making HTTP requests in React
+npm install axios  
+
+# Install React Router DOM for handling navigation between different pages/views in the React app
+npm install react-router-dom  
+
+# Install react-oauth/github for GitHub OAuth authentication in your React application
+npm install react-oauth/github
