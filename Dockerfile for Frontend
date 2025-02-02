@@ -1,0 +1,13 @@
+FROM node:16  # Use the official Node.js 16 image as the base image for the container
+
+WORKDIR /app  # Set the working directory inside the container to /app
+
+COPY package.json package-lock.json ./  # Copy the package.json and package-lock.json files into the container
+
+RUN npm install  # Install the dependencies defined in package.json
+
+COPY . .  # Copy the entire application code into the container
+
+EXPOSE 3000  # Expose port 3000 so the app can be accessed on this port
+
+CMD ["npm", "start"]  # Set the default command to run the app using npm start
