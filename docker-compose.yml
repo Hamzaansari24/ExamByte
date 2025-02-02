@@ -1,0 +1,16 @@
+version: '3.8'  # Specifies the Docker Compose version
+
+services:
+  db:
+    image: postgres  # Uses the official PostgreSQL image
+    environment:
+      POSTGRES_USER: user  # Sets the PostgreSQL username
+      POSTGRES_PASSWORD: password  # Sets the PostgreSQL password
+      POSTGRES_DB: exambyte  # Creates a database named "exambyte"
+
+  app:
+    build: .  # Builds the application from the Dockerfile in the current directory
+    ports:
+      - "8080:8080"  # Maps container's port 8080 to host's port 8080
+    depends_on:
+      - db  # Ensures that the database service starts before the application
