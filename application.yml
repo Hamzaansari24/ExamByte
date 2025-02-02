@@ -1,0 +1,13 @@
+server:
+  port: 8080  # Specifies the port on which the application will run
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/exambyte  # Database connection URL for PostgreSQL
+    username: user  # Database username
+    password: password  # Database password (consider using environment variables for security)
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # Automatically updates the database schema based on entity changes
+    show-sql: true  # Enables logging of SQL queries for debugging and monitoring
