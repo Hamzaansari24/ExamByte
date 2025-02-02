@@ -1,0 +1,41 @@
+A Modern Exam Management System for Programming Practice:-
+ExamByte is a web-based exam management system designed to replace ILIAS for conducting and managing tests in Programming Practice.
+The platform supports automated multiple-choice grading, manual grading for text-based answers, and result tracking for both students and organizers.
+
+** Features
+* User Roles & Authentication:-
+Students: Take exams, view results.
+Graders: Manually grade text-based answers.
+Organizers: Manage exams, grading, and results.
+Authentication: Uses GitHub OAuth for secure login.
+* Test & Exam Management:-
+Multiple-Choice Questions (Auto-Graded).
+Text-Based Questions (Manually Graded).
+Real-Time Test Status: View results after release time.
+Custom Scoring Rules:
+Full points for correct MCQ answers.
+Half points for one mistake.
+No points for more than one mistake.
+*Performance & Analytics:-
+Students: See exam pass/fail status (warnings for repeated failures).
+Organizers: Identify trends, review question effectiveness.
+Graders: Track grading progress and pending tasks.
+* Tech Stack:-
+Backend: Java, Spring Boot
+Frontend: React, HTML, CSS
+Authentication: GitHub OAuth
+Database: (TBD - Flexible based on requirements)
+Deployment: Docker + Gradle
+** How to Run the Project Locally
+* Prerequisites:-
+Install Java 17+
+Install Node.js (for frontend)
+Install Docker (for deployment)
+* Backend Setup:-
+git clone https://github.com/yourusername/exambyte.git
+cd exambyte/backend
+./gradlew bootRun
+* Frontend Setup:-
+cd frontend
+npm install
+npm start
